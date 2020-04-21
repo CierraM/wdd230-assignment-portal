@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway+Dots&family=Raleway:wght@300&display=swap');
+
+body{
+    max-width: 650px;
+    margin: 1.25rem auto;
+}
+h1, footer{
+    background-color:	#7ac6cf;
+    color:white;
+    border-radius:5px;
+}
+h1{
+    font-family: 'Raleway', cursive; 
+    font-weight: 300;
+    font-size: 36px;
+    text-align:center;
+    padding:15px 0px 15px 150px;
+    
+}
+h2{
+    border-bottom: 2px solid #7ac6cf;
+    font-size: 1.5rem;
+}
+#redhat{
+    float: right;
+    margin: 1rem;
+    box-shadow: 0px 2px 30px -5px black;
+    border-radius: 2px;
+}
+p, li, h2{
+    font-family:"PT Sans", sans-serif;
+}
+footer{
+    padding:20px 0 20px 10px;
+    text-align:center;
+}
+#lastUpdated{
+    color: #1603a1;
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+footer p{
+    margin: 0;
+}
+a{
+    color:#7ac6cf;
+}
+footer a{
+    color:white;
+}
