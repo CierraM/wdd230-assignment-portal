@@ -7,6 +7,7 @@
     --lightgrey: #6c7274;
     --darkblue: #416788;
     --yellow: #fcd581;
+    --lightyellow: #fce4b0;
     --lightblue: #deeefd;
 }
 
@@ -102,7 +103,7 @@ nav ul li:hover{
 }
 
 footer {
-    background-color: var(--darkblue);
+    background-color: var(--lightyellow);
     padding: 20px;
     border-radius: 0 0 20px 20px;
     text-align:center;
