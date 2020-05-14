@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body onload="dateCalc()">
+    <header>
+        <div class="head-bar">
+            <img class="logo" src="images/icon.png" alt="storm cloud logo">
+            <div>
+                <h1 class="top-heading">East Idaho Skies</h1>
+                <div class="motto">For your weather tracking needs</div>
+            </div>
+        </div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Preston</h2>
+
+        <img src="https://loremflickr.com/320/240/weather" alt="Hero Image" class="hero-image">
+        <div id="weather-summary">
+            <h4>Weather Summary</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur, fuga consequuntur sunt, minus
+                culpa quos architecto autem dolor, labore placeat! Quasi, dolor. Cupiditate, eligendi praesentium
+                sed ipsa pariatur voluptas.</p>
+        </div>
+
+
+
+        <div class="content-box" id="forecast">
+            <h3>5 Day Forecast</h3>
+            <div id="forecast-placeholder"></div>
+        </div>
+
+        <div class="content-box" id="article">
+            <div>
+            <h3>Article</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita reiciendis quas magni dicta
+                tempore voluptate earum asperiores beatae adipisci similique rem accusantium, molestiae illo, debitis ad
+                vero soluta aliquid!</p>
+                </div>
+            <img src="https://loremflickr.com/320/240/weather" alt="Placeholder image">
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-top">
+            <img class="map" src="https://loremflickr.com/320/240/map" alt="map">
+            <div class="contact-info">
+                <p>contact info</p>
+                <p>fake phone number</p>
+                <p>an address</p>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-info">
+                <p>&copy;</p>
+                <p>East Idaho Skies</p>
+                <p>|</p>
+                <p>Cierra Morris</p>
+                <p>|</p>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div id="date"></div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
