@@ -37,7 +37,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: var(--yellow);
+    color: var(--lightyellow);
 }
 
 button:hover {
@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.2);
-    color: var(--yellow);
+    color: var(--lightyellow);
 }
 
 .head-bar {
@@ -118,7 +118,7 @@ h6 {
 
 .top-heading {
     margin-bottom: 0;
-    color: var(--yellow);
+    color: var(--lightyellow);
 }
 
 h2 {
@@ -134,7 +134,7 @@ h3 {
 
 .motto {
     margin: 5px 10px 10px 10px;
-    color: var(--yellow);
+    color: var(--lightyellow);
 }
 
 p,
@@ -192,7 +192,7 @@ a {
 }
 
 .contact-info p {
-    color: var(--yellow);
+    color: var(--lightyellow);
 }
 
 .map {
@@ -220,7 +220,7 @@ a {
 .footer-bar p,
 .footer-bar a,
 .footer-bar div {
-    color: var(--yellow);
+    color: var(--lightyellow);
     margin: 0;
 }
 
