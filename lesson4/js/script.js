@@ -1,6 +1,5 @@
 function toggleMenu() {
     document.getElementById('primaryNav').classList.toggle("hide")
-    
 }
 
 // get the date in form of Wednesday, 24 July 2020.
@@ -12,7 +11,7 @@ let todayDay = todayDate.getDate()
 let todayMonth = todayDate.getMonth()
 let todayYear = todayDate.getFullYear()
 
-let weekday=new Array(7);
+let weekday = new Array(7);
 weekday[0]="Monday";
 weekday[1]="Tuesday";
 weekday[2]="Wednesday";
@@ -40,4 +39,3 @@ console.log(fullDate)
 
 document.getElementById('date').textContent = fullDate;
 }
-
