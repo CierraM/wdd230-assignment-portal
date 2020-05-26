@@ -12,13 +12,13 @@ let todayMonth = todayDate.getMonth()
 let todayYear = todayDate.getFullYear()
 
 let weekday = new Array(7);
-weekday[0]="Monday";
-weekday[1]="Tuesday";
-weekday[2]="Wednesday";
-weekday[3]="Thursday";
-weekday[4]="Friday";
-weekday[5]="Saturday";
-weekday[6]="Sunday";
+weekday[1]="Monday";
+weekday[2]="Tuesday";
+weekday[3]="Wednesday";
+weekday[4]="Thursday";
+weekday[5]="Friday";
+weekday[6]="Saturday";
+weekday[0]="Sunday";
 
 let month = new Array(12)
 month[0] = "January";
@@ -39,7 +39,7 @@ console.log(fullDate)
 
 document.getElementById('date').textContent = fullDate;
 
-if(todayWeekday == 4){
+if(todayWeekday == 5){
     document.getElementById('banner').style.display = "block";
 }
 }

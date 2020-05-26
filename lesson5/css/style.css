@@ -383,10 +383,16 @@ a {
         display: flex;
         padding: 20px;
         margin-bottom: 0;
+        word-wrap: break-word;
     }
+
+   
 
     #article img {
         margin-left: 20px;
+        height: 100%;
+        float: right;
+        
     }
 
     #forecast-placeholder {
@@ -403,7 +409,7 @@ a {
     }
     .map{
         display: block;
-        
+        height: 300px;
     
     }
 }
