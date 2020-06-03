@@ -14,7 +14,7 @@ function preloadImage(img) {
 }
 
 const options = {
-  threshold: .5
+  threshold: 0
 }
 
 const callback = (entries, io) => {
