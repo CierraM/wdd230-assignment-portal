@@ -2,14 +2,13 @@ img[data-src] {
   filter: blur(0.2em);
 }
 
-img{
+img {
   filter: blur(0em);
   transition: filter 0.5s;
 }
 
-  body{
-      display: flex;
-      flex-direction: column;
-      padding: 5px;
-      margin: 0 auto;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
