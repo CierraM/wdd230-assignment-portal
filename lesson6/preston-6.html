@@ -30,17 +30,19 @@
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="https://cierram.github.io/lesson7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Preston</h2>
         <div class="overlay-container">
-            <img src="images/wdd230_image_franklinOriginal.jpeg" alt="Hero Image" class="hero-image"
-            srcset="images/wdd230_image_small500.jpg 500w,
-                    images/wdd230_image_medium800.jpg 800w,
-                    images/wdd230_image_franklinLarge1100.jpg">
+            <picture>
+                <source class="hero-image" media="(min-width: 1100px)" srcset="images/wdd230_image_franklinLarge1100.jpg">
+                <source class="hero-image"media="(min-width: 800px)" srcset="images/wdd230_image_medium800.jpg">
+                <source class="hero-image" media="(min-width: 500px)" srcset="images/wdd230_image_small500.jpg">
+                <img class="hero-image"src="images/wdd230_image_franklinOriginal.jpeg" alt="Hero image">
+            </picture>
             <div id="weather-summary">
                 <h4>Weather Summary</h4>
                 <div id="weather-grid">
