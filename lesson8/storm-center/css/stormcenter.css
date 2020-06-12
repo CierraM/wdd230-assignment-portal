@@ -302,7 +302,7 @@ label, textarea, input, div, select{
     font-family: "Roboto", sans-serif;
 }
 
-input{
+input, select{
     height: 44px;
     width: 50%;
     border-radius: 5px;
@@ -386,6 +386,12 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+  }
+
+  .thanks{
+      font-size: 1.2em;
+      text-align: center;
+      padding-bottom: 200px;
   }
 
 /* Medium Screens */
@@ -574,7 +580,7 @@ input[type="radio"]{
 
 }
 
-input{
+input, select{
     height: 30px;
 }
 
