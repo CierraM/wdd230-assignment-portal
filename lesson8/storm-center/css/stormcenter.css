@@ -359,6 +359,10 @@ input:focus, input:checked, input:hover{
 input:invalid{
     border: 1px solid red;
 }
+
+input:valid{
+    border: 1px solid #ccc;
+}
 .submitbtn:hover{
     cursor: pointer;
     box-shadow: inset -7px -7px 34px 10px rgba(0,3,100,0.39);
@@ -373,6 +377,16 @@ input:invalid{
 .radio-label input {
     margin-right: 8px;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
 
 /* Medium Screens */
 
