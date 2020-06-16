@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@800&display=swap');
+body{
+    font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto Slab";
+    font-weight: bolder;
+    color: #4E4E97;
+    text-align: center;
+}
+.cards{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#E6E6E6;
+    width: 95%;
+    padding-top: 2%;
+    margin: 0 auto;
+    box-shadow: -3px 5px 18px 11px rgba(181,181,181,1);
+}
+
+.card{
+    background-color: #B9B9CC;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #525679;
+    max-width: 330px;
+}
+
+.card img{
+    width: 60%;
+    display: block;
+    margin: 10px auto 20px;
+}
