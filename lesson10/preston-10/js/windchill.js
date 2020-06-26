@@ -1,9 +1,6 @@
 function calculateWindchill(temp, speed) {
 
-    // let  t = parseFloat(document.getElementById('temp').innerHTML);
-    // let s = parseFloat(document.getElementById('windSpeed').innerHTML);
-    // console.log(s)
-    // console.log(t)
+
     
     if(temp <= 50 && speed > 3){
     let windChill = 35.74 + 0.6215 * temp -35.75 * Math.pow(speed, 0.16) + 0.4275 *temp * Math.pow(speed, .16);
@@ -16,6 +13,8 @@ function calculateWindchill(temp, speed) {
     }
     }
 
+
+//fetch weather data
 function getWeather() {
     const appid = '0b209e7419e85240602a2b16775256c6';
     const prestonId = '5604473'
@@ -31,11 +30,12 @@ function getWeather() {
         let humidity = jsObject.main.humidity
         let wind = jsObject.wind.speed
 
+        //put desired values into an array
         let weatherValues = [currently, temp, windchill, humidity, wind]
         for (let i = 0; i < weatherValues.length; i++){
             let p = document.createElement('p')
             p.textContent = weatherValues[i]
-
+        //create elements
             if (i == 1){
                 let span = document.createElement('span')
                 span.textContent = "° F"
@@ -68,14 +68,14 @@ function getWeather() {
         fetch(forecastURL)
             .then((response) => response.json())
             .then((jsObject) =>{
-                                
+             //put desired items into arrays                   
                 let dates = [] 
                 let icons = []
                 let temps = []
                 let src = []
                 for (let i = 0; i < jsObject.list.length; i++){
                     currentObject = jsObject.list[i]
-                    if (currentObject.dt_txt.includes("18:00:00")){
+                    if (currentObject.dt_txt.includes("18:00:00")){ //we only want the data from 6:00PM
 
                         iconNumber = currentObject.weather[0].icon
                         icons.push(`http://openweathermap.org/img/wn/${iconNumber}@2x.png`) // the code for weather icon
