@@ -64,7 +64,7 @@ function getWeather() {
         calculateWindchill(temp, wind)
 
         //fetch data for 5 day forecast
-        let forecastURL = `http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0b209e7419e85240602a2b16775256c6`
+        let forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0b209e7419e85240602a2b16775256c6`
         fetch(forecastURL)
             .then((response) => response.json())
             .then((jsObject) =>{
