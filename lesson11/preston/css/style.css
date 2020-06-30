@@ -224,6 +224,27 @@ a {
     object-fit: cover;
 }
 
+
+/* UPcoming Events tab */
+#events{
+    text-align: center;
+    margin-top: 80px;
+    width: 90%;
+
+}
+
+#events h3{
+    padding-top: 10px;
+}
+#event-content{
+    display: flex;
+    justify-content: center;
+}
+
+#event-content div{
+    padding: 0 20px 10px;
+}
+
 /* footer */
 .footer-top {
     display: flex;
@@ -397,6 +418,7 @@ a {
         margin-left: 20px;
         height: 100%;
         float: right;
+        text
         
     }
 
