@@ -78,7 +78,7 @@ function getWeather() {
                     if (currentObject.dt_txt.includes("18:00:00")){ //we only want the data from 6:00PM
 
                         iconNumber = currentObject.weather[0].icon
-                        icons.push(`http://openweathermap.org/img/wn/${iconNumber}@2x.png`) // the code for weather icon
+                        icons.push(`https://openweathermap.org/img/wn/${iconNumber}@2x.png`) // the code for weather icon
                         console.log(currentObject.main.temp)
                         temps.push((Math.round(parseFloat((currentObject.main.temp) -273.15) * (9/5) + 32)) + "° F") //a temperature
                         src.push(currentObject.weather[0].main)
