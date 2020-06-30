@@ -328,6 +328,7 @@ a {
         border-collapse: collapse;
         padding: 10px;
         width: 90%;
+        background-color: var(--yellow)
         
     }
    
@@ -342,6 +343,7 @@ a {
     #forecast-table img{
         justify-self: center;
         padding: 5px;
+        
     }
     .content-box {
         width: 80%;
