@@ -174,16 +174,19 @@ a {
     left: 20px;
     max-width: 250px;
     padding: 10px;
+    
 
 }
 
 #weather-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 
 #weather-keys{
     text-align: right;
+    
 }
 
 #weather-values{
@@ -235,14 +238,26 @@ a {
 
 #events h3{
     padding-top: 10px;
+    
 }
 #event-content{
     display: flex;
     justify-content: center;
+    
 }
 
 #event-content div{
     padding: 0 20px 10px;
+}
+
+#event-dates{
+    text-align: right;
+    
+}
+
+#event-titles{
+    text-align: left;
+    
 }
 
 /* footer */
@@ -418,7 +433,7 @@ a {
         margin-left: 20px;
         height: 100%;
         float: right;
-        text
+    
         
     }
 

@@ -23,7 +23,7 @@ function getWeather() {
     fetch(url)
       .then((response) => response.json())
       .then((jsObject) => {
-        console.log(jsObject);
+        
         let currently = jsObject.weather[0].main
         let temp = Math.round(parseFloat(jsObject.main.temp_max) * (9/5) - 459.67)
         let windchill = ""
@@ -63,6 +63,7 @@ function getWeather() {
         }
         calculateWindchill(temp, wind)
 
+
         //fetch data for 5 day forecast
         let forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0b209e7419e85240602a2b16775256c6`
         fetch(forecastURL)
@@ -79,7 +80,7 @@ function getWeather() {
 
                         iconNumber = currentObject.weather[0].icon
                         icons.push(`https://openweathermap.org/img/wn/${iconNumber}@2x.png`) // the code for weather icon
-                        console.log(currentObject.main.temp)
+                        
                         temps.push((Math.round(parseFloat((currentObject.main.temp) -273.15) * (9/5) + 32)) + "° F") //a temperature
                         src.push(currentObject.weather[0].main)
                         let day = currentObject.dt_txt.split(" ")
