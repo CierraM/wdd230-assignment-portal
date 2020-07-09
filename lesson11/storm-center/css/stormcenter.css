@@ -406,6 +406,11 @@ input[type=number] {
 /* Medium Screens */
 
 @media only screen and (min-width: 664px) {
+
+    nav{
+        padding: 0 10%;
+    }
+    
     nav button {
         display: none;
     }
