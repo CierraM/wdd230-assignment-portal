@@ -81,7 +81,7 @@ function getWeather() {
                         iconNumber = currentObject.weather[0].icon
                         icons.push(`https://openweathermap.org/img/wn/${iconNumber}@2x.png`) // the code for weather icon
                         
-                        temps.push((Math.round(parseFloat((currentObject.main.temp) -273.15) * (9/5) + 32)) + "° F") //a temperature
+                        temps.push((Math.round(parseFloat((currentObject.main.temp)) * (9/5) - 459.67)) + "° F") //convert to fahr.
                         src.push(currentObject.weather[0].main)
                         let day = currentObject.dt_txt.split(" ")
                         day = day[0].split("-")
