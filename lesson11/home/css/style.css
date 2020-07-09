@@ -104,6 +104,7 @@ main {
     background-color: var(--offwhite);
     margin: 0;
     width: 100%;
+    min-height: 80vh;
 }
 
 header {
